@@ -8,7 +8,7 @@ import LottieView from 'lottie-react-native';
     // clientId: '525511159290-7e3c8lbkhrigkb1hkn79gq434r16qafl.apps.googleusercontent.com',
     // redirectUri: makeRedirectUri({ scheme: 'success-auth' }),
  
-const App = () => {
+const HomeScreen = () => {
 
     const animation = useRef(null);
     const [request1, response1, promptAsync1] = Google.useAuthRequest({
@@ -59,7 +59,7 @@ const App = () => {
           backgroundColor: '#eee',
         }}
         // Find more Lottie files at https://lottiefiles.com/featured
-        source={require('./assets/app.json')}
+        source={require('../../assets//app.json')}
       />
    <Text>Bienvenue, {name}</Text>
    <Text>{name}</Text>
@@ -90,4 +90,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default HomeScreen;

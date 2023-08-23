@@ -16,7 +16,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.calvmite.successauth"
     },
     "android": {
       "adaptiveIcon": {
@@ -26,6 +27,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b710ae7b-ec04-4296-84c4-4fe82804c3d9"
+      }
     }
   }
 }
